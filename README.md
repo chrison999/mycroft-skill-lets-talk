@@ -16,9 +16,3 @@ Say any of the following:
   * good evening
   * good night
 
-NOTE:
-
-Currently, only the GoodMorning intent works.  I have *no*
-idea why the other intents aren't working so if someone
-can fix this I'd *really* appreciate it!
-
