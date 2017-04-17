@@ -32,6 +32,20 @@ class LetsTalkSkill(MycroftSkill):
         super(LetsTalkSkill, self).__init__(name="LetsTalkSkill")
 
     def initialize(self):
+        thank_you_intent = IntentBuilder("ThankYouIntent").\
+            require("ThankYouKeyword").build()
+        self.register_intent(thank_you_intent, self.handle_thank_you_intent)
+
+        how_are_you_intent = IntentBuilder("HowAreYouIntent").\
+            require("HowAreYouKeyword").build()
+        self.register_intent(how_are_you_intent,
+                             self.handle_how_are_you_intent)
+
+        hello_world_intent = IntentBuilder("HelloWorldIntent").\
+            require("HelloWorldKeyword").build()
+        self.register_intent(hello_world_intent,
+                             self.handle_hello_world_intent)
+
         good_morning_intent = IntentBuilder("GoodMorningIntent").\
             require("GoodMorningKeyword").build()
         self.register_intent(good_morning_intent,
@@ -52,6 +66,12 @@ class LetsTalkSkill(MycroftSkill):
         self.register_intent(good_night_intent,
                              self.handle_good_night_intent)
 
+    def handle_thank_you_intent(self, message):
+        self.speak_dialog("welcome")
+
+    def handle_how_are_you_intent(self, message):
+        self.speak_dialog("how.are.you")
+
     def handle_good_morning_intent(self, message):
         self.speak_dialog("good.morning")
 
@@ -63,6 +83,9 @@ class LetsTalkSkill(MycroftSkill):
 
     def handle_good_night_intent(self, message):
         self.speak_dialog("good.night")
+
+    def handle_hello_world_intent(self, message):
+        self.speak_dialog("hello.world")
 
     def stop(self):
         pass

@@ -3,9 +3,15 @@ A skill for MycroftAI that replies to various greetings
 
 DESCRIPTION:
 
-This Mycroft skill is a modification of the npr-skill by eward.
-Basically, all I have done is added intents for "Good Morning,"
-"Good Afternoon," "Good Evening," and "Good Night."
+This Mycroft skill is based on the "helloworld" skill
+by eward.  Basically, it implements intents for "Good
+Morning," "Good Afternoon," "Good Evening," and "Good Night."
+
+INSTALLATION:
+
+1.  Clone/download this repository
+
+2.  Restart mycroft
 
 USAGE:
 
