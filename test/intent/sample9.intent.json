@@ -1,0 +1,7 @@
+{
+  "utterance": "Good evening",
+  "intent_type": "GoodEveningIntent",
+  "intent": {
+    "HowAreYouKeyword": "good evening"
+  }
+}
