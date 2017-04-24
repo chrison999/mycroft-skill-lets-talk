@@ -7,6 +7,10 @@ This Mycroft skill is based on the "helloworld" skill
 by eward.  Basically, it implements intents for "Good
 Morning," "Good Afternoon," "Good Evening," and "Good Night."
 
+CURRENT STATE:
+
+Workings great but if anyone finds any issues/bugs do let me know!
+
 INSTALLATION:
 
 1.  Clone/download this repository
