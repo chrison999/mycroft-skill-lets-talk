@@ -9,7 +9,7 @@ Morning," "Good Afternoon," "Good Evening," and "Good Night."
 
 CURRENT STATE:
 
-Workings great but if anyone finds any issues/bugs do let me know!
+Works great but if anyone finds any issues/bugs do let me know!
 
 INSTALLATION:
 
